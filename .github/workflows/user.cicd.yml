@@ -95,6 +95,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
+            source /home/ubuntu/.nvm/nvm.sh
+            source /home/ubuntu/.profile
             cd /home/ubuntu/apps/build
             yarn install --production
             # Assume PM2 is used, Replace with other command for other process manager
