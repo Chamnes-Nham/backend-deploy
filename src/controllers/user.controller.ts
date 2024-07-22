@@ -53,6 +53,8 @@ export class UserController extends Controller {
     }
   }
 
+
+
   @Get("/GetUserById/{userId}")
   public async getUserById(@Path("userId") userId: string): Promise<IUser> {
     try {

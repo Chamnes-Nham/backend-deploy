@@ -23,6 +23,7 @@ export class UserServices {
     }
   }
 
+
   public async GetUserById(userId: string): Promise<IUser> {
     try {
       const user = await userRepository.GetUserById(userId);
